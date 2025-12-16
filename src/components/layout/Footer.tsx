@@ -32,7 +32,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-lg leading-tight">Bright Angels</span>
-                <span className="text-xs text-primary-foreground/70 tracking-wider">Nursery & Primary</span>
+                <span className="text-[10px] text-primary-foreground/70 italic">Education is the Ultimate Panacea</span>
               </div>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6">

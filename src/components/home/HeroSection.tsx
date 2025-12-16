@@ -17,8 +17,8 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <div className="animate-fade-up">
-            <span className="inline-block px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6">
-              Nurturing Young Minds with Love
+            <span className="inline-block px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6 italic">
+              "Education is the Ultimate Panacea"
             </span>
           </div>
           
