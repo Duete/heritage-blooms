@@ -31,13 +31,12 @@ export function Footer() {
                 <GraduationCap className="w-7 h-7 text-forest-dark" />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-xl leading-tight">Victoria High</span>
-                <span className="text-xs text-primary-foreground/70 tracking-wider">EST. 1923</span>
+                <span className="font-serif font-bold text-lg leading-tight">Bright Angels</span>
+                <span className="text-xs text-primary-foreground/70 tracking-wider">Nursery & Primary</span>
               </div>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6">
-              Nurturing confident, capable, and compassionate future leaders since 1923. 
-              A century of academic excellence and holistic education.
+              {"Demere's Bright Angels Nursery & Primary School — nurturing young minds with love, care, and excellence in Mbale City."}
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-forest-dark transition-colors">
@@ -96,8 +95,8 @@ export function Footer() {
               <li className="flex items-start gap-3 text-sm">
                 <MapPin size={18} className="text-gold shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  P.O. Box 1234, Kampala Road<br />
-                  Kampala, Uganda
+                  Nkoma, Northern City Division<br />
+                  Mbale City, Uganda
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm">
@@ -108,8 +107,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail size={18} className="text-gold shrink-0" />
-                <a href="mailto:info@victoriahigh.ac.ug" className="text-primary-foreground/80 hover:text-gold transition-colors">
-                  info@victoriahigh.ac.ug
+                <a href="mailto:info@demeresbrightangels.ac.ug" className="text-primary-foreground/80 hover:text-gold transition-colors">
+                  info@demeresbrightangels.ac.ug
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm">
@@ -128,7 +127,7 @@ export function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>© 2024 Victoria High School. All rights reserved.</p>
+            <p>{"© 2024 Demere's Bright Angels Nursery & Primary School. All rights reserved."}</p>
             <div className="flex gap-6">
               <Link to="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
               <Link to="#" className="hover:text-gold transition-colors">Terms of Use</Link>

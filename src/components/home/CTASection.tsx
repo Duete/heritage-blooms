@@ -16,13 +16,13 @@ export function CTASection() {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="text-gold font-medium tracking-wider text-sm uppercase">Join Our Community</span>
+          <span className="text-gold font-medium tracking-wider text-sm uppercase">Join Our Family</span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-cream mt-4 mb-6">
-            Begin Your Journey at Victoria High
+            Begin Your Child&apos;s Journey at Bright Angels
           </h2>
           <p className="text-cream/80 text-lg mb-8 max-w-2xl mx-auto">
-            Admissions for the 2025 academic year are now open. Take the first step 
-            towards an exceptional education and a brighter future.
+            Admissions for the 2025 academic year are now open. Give your child 
+            the gift of quality education in a nurturing environment.
           </p>
 
           {/* CTA Buttons */}
@@ -42,9 +42,9 @@ export function CTASection() {
               <Phone size={18} />
               <span>+256 700 000 000</span>
             </a>
-            <a href="mailto:admissions@victoriahigh.ac.ug" className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors">
+            <a href="mailto:admissions@demeresbrightangels.ac.ug" className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors">
               <Mail size={18} />
-              <span>admissions@victoriahigh.ac.ug</span>
+              <span>admissions@demeresbrightangels.ac.ug</span>
             </a>
           </div>
         </div>

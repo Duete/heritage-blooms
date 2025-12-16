@@ -52,9 +52,9 @@ export function Header() {
               <Phone size={14} />
               <span>+256 700 000 000</span>
             </a>
-            <a href="mailto:info@victoriahigh.ac.ug" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="mailto:info@demeresbrightangels.ac.ug" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Mail size={14} />
-              <span>info@victoriahigh.ac.ug</span>
+              <span>info@demeresbrightangels.ac.ug</span>
             </a>
           </div>
           <div className="flex items-center gap-4 ml-auto">
@@ -74,8 +74,8 @@ export function Header() {
                 <GraduationCap className="w-7 h-7 text-gold" />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-xl text-primary leading-tight">Victoria High</span>
-                <span className="text-xs text-muted-foreground tracking-wider">EST. 1923</span>
+                <span className="font-serif font-bold text-lg text-primary leading-tight">Bright Angels</span>
+                <span className="text-xs text-muted-foreground tracking-wider">Nursery & Primary</span>
               </div>
             </Link>
 
