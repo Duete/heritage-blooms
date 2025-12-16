@@ -27,8 +27,8 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Address</h3>
                   <p className="text-muted-foreground text-sm">
-                    P.O. Box 123<br />
-                    Bungoma, Kenya
+                    Nkoma, Northern City Division<br />
+                    Mbale City, Uganda
                   </p>
                 </div>
               </div>
@@ -42,8 +42,8 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                   <p className="text-muted-foreground text-sm">
-                    +254 700 123 456<br />
-                    +254 733 456 789
+                    +256 700 000 000<br />
+                    +256 700 000 001
                   </p>
                 </div>
               </div>
@@ -57,8 +57,8 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
                   <p className="text-muted-foreground text-sm">
-                    info@schoolname.ac.ke<br />
-                    admissions@schoolname.ac.ke
+                    info@demeresbrightangels.ac.ug<br />
+                    admissions@demeresbrightangels.ac.ug
                   </p>
                 </div>
               </div>

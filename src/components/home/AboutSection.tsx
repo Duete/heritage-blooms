@@ -35,7 +35,7 @@ export function AboutSection() {
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-elevated">
               <img
                 src={aboutImage}
-                alt="Victoria High School students"
+                alt="Bright Angels School pupils"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -63,14 +63,12 @@ export function AboutSection() {
             </h2>
             <div className="divider-gold mb-6" />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Founded in 1923, Victoria High School has been a beacon of academic excellence and 
-              character development in Uganda. Our institution has produced generations of leaders, 
-              scholars, and changemakers who continue to shape our nation and the world.
+              {"Demere's Bright Angels Nursery & Primary School is a beacon of quality early childhood and primary education in Nkoma, Mbale City. We are committed to nurturing young minds in a safe, loving, and stimulating environment."}
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               We believe in nurturing the whole child — intellectually, physically, socially, and 
-              spiritually. Our dedicated faculty and state-of-the-art facilities provide an 
-              environment where every student can discover and develop their unique potential.
+              spiritually. Our dedicated teachers provide a caring environment where every pupil 
+              can discover and develop their unique potential from nursery through primary school.
             </p>
 
             {/* Features Grid */}

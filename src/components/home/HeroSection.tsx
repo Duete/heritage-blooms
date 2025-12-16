@@ -18,18 +18,17 @@ export function HeroSection() {
         <div className="max-w-3xl">
           <div className="animate-fade-up">
             <span className="inline-block px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6">
-              Excellence Since 1923
+              Nurturing Young Minds with Love
             </span>
           </div>
           
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-cream leading-tight mb-6 animate-fade-up delay-100">
-            Nurturing Future
-            <span className="block text-gold">Leaders</span>
+            Bright Angels
+            <span className="block text-gold">Nursery & Primary</span>
           </h1>
           
           <p className="text-cream/90 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed animate-fade-up delay-200">
-            Victoria High School offers a rigorous academic program with a century-long history of excellence. 
-            We provide our learners with rock-solid values to face global challenges.
+            {"Demere's Bright Angels Nursery & Primary School provides quality early childhood and primary education in a caring, nurturing environment in Mbale City."}
           </p>
           
           <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
@@ -50,10 +49,10 @@ export function HeroSection() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6">
             {[
-              { number: "100+", label: "Years of Excellence" },
-              { number: "2,500+", label: "Students" },
-              { number: "150+", label: "Expert Teachers" },
-              { number: "98%", label: "Success Rate" },
+              { number: "500+", label: "Happy Pupils" },
+              { number: "30+", label: "Dedicated Teachers" },
+              { number: "100%", label: "Care & Love" },
+              { number: "PLE", label: "Excellence" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-gold font-serif text-3xl md:text-4xl font-bold">{stat.number}</div>
