@@ -7,6 +7,7 @@ import { NewsSection } from "@/components/home/NewsSection";
 import { SchoolLifeSection } from "@/components/home/SchoolLifeSection";
 import { LeadershipSection } from "@/components/home/LeadershipSection";
 import { CTASection } from "@/components/home/CTASection";
+import LocationSection from "@/components/home/LocationSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <SchoolLifeSection />
         <NewsSection />
         <LeadershipSection />
+        <LocationSection />
         <CTASection />
       </main>
       <Footer />
