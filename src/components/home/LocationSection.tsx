@@ -40,10 +40,9 @@ const LocationSection = () => {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">Phone</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Phone / WhatsApp</h3>
                   <p className="text-muted-foreground text-sm">
-                    +256 700 000 000<br />
-                    +256 700 000 001
+                    +256 782 785 342
                   </p>
                 </div>
               </div>

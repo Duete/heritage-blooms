@@ -101,8 +101,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone size={18} className="text-gold shrink-0" />
-                <a href="tel:+256700000000" className="text-primary-foreground/80 hover:text-gold transition-colors">
-                  +256 700 000 000
+                <a href="tel:+256782785342" className="text-primary-foreground/80 hover:text-gold transition-colors">
+                  +256 782 785 342 (WhatsApp)
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm">
