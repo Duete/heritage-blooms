@@ -48,9 +48,9 @@ export function Header() {
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="hidden md:flex items-center gap-6">
-            <a href="tel:+256700000000" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="tel:+256782785342" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Phone size={14} />
-              <span>+256 700 000 000</span>
+              <span>+256 782 785 342</span>
             </a>
             <a href="mailto:info@demeresbrightangels.ac.ug" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Mail size={14} />
