@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 import newsImage1 from "@/assets/news-graduation.jpg";
 import newsImage2 from "@/assets/news-sports.jpg";
 import newsImage3 from "@/assets/news-science.jpg";
@@ -30,21 +31,23 @@ const newsItems = [
 
 export function NewsSection() {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-muted/30">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <span className="text-gold font-medium tracking-wider text-sm uppercase">Stay Updated</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2">
-              Latest News & Events
+            <span className="badge-accent mb-4">Stay Updated</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
+              Events & Announcements
             </h2>
             <div className="divider-gold mt-4" />
           </div>
-          <Button variant="outline" className="w-fit group">
-            View All News
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link to="/news">
+            <Button variant="outline" className="w-fit group rounded-full border-primary text-primary hover:bg-primary hover:text-white">
+              View All News
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
 
         {/* News Grid */}
@@ -52,7 +55,7 @@ export function NewsSection() {
           {newsItems.map((item, index) => (
             <article
               key={index}
-              className="card-heritage overflow-hidden group cursor-pointer"
+              className="bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/20 shadow-soft hover:shadow-elevated transition-all duration-300 group cursor-pointer"
             >
               {/* Image */}
               <div className="aspect-[16/10] overflow-hidden">
@@ -66,7 +69,7 @@ export function NewsSection() {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-medium text-gold bg-gold/10 px-2 py-1 rounded">
+                  <span className="text-xs font-semibold text-gold bg-gold/10 px-3 py-1 rounded-full">
                     {item.category}
                   </span>
                   <div className="flex items-center gap-1 text-muted-foreground text-xs">
@@ -74,13 +77,13 @@ export function NewsSection() {
                     {item.date}
                   </div>
                 </div>
-                <h3 className="font-serif font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                <h3 className="font-bold text-lg text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-sm line-clamp-2 mb-4">
                   {item.excerpt}
                 </p>
-                <span className="text-primary text-sm font-medium inline-flex items-center gap-1 group-hover:text-gold transition-colors">
+                <span className="text-primary text-sm font-semibold inline-flex items-center gap-1 group-hover:text-gold transition-colors">
                   Read More
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </span>
