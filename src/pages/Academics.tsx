@@ -32,7 +32,8 @@ const Academics = () => {
     {
       level: "Upper Primary",
       ages: "Ages 10-13",
-      classes: ["Primary 4", "Primary 5", "Primary 6", "Primary 7"],
+      classes: ["Primary 4", "Primary 5"],
+      comingSoon: ["Primary 6 (2027)", "Primary 7 (2028)"],
       focus: "Advanced learning and preparation for national examinations (PLE).",
     },
   ];
@@ -88,6 +89,12 @@ const Academics = () => {
                       {level.classes.map((cls, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
                           <CheckCircle className="w-4 h-4 text-gold" />
+                          {cls}
+                        </li>
+                      ))}
+                      {level.comingSoon?.map((cls, idx) => (
+                        <li key={`coming-${idx}`} className="flex items-center gap-2 text-muted-foreground/60 text-sm italic">
+                          <Clock className="w-4 h-4 text-muted-foreground/60" />
                           {cls}
                         </li>
                       ))}
