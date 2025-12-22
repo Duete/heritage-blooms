@@ -1,28 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Users, Trophy, Heart } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import aboutImage from "@/assets/about-students.jpg";
 
 const features = [
-  {
-    icon: BookOpen,
-    title: "Academic Excellence",
-    description: "Rigorous curriculum preparing students for global success",
-  },
-  {
-    icon: Users,
-    title: "Community Spirit",
-    description: "A warm, inclusive environment where every student belongs",
-  },
-  {
-    icon: Trophy,
-    title: "Holistic Development",
-    description: "Nurturing talents through sports, arts, and leadership",
-  },
-  {
-    icon: Heart,
-    title: "Strong Values",
-    description: "Building character rooted in integrity and compassion",
-  },
+  "Qualified and dedicated teachers",
+  "Safe and nurturing environment",
+  "Modern teaching facilities",
+  "Holistic child development",
+  "Strong moral foundation",
+  "Active parent involvement",
 ];
 
 export function AboutSection() {
@@ -32,64 +19,55 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-elevated">
+            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
                 src={aboutImage}
-                alt="Bright Angels School pupils"
-                className="w-full h-full object-cover"
+                alt="Bright Angels School pupils learning"
+                className="w-full h-auto object-cover aspect-[4/3]"
               />
-            </div>
-            {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-lg shadow-elevated max-w-xs hidden md:block">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center">
-                  <Trophy className="w-7 h-7 text-gold" />
-                </div>
-                <div>
-                  <div className="font-serif font-bold text-2xl text-primary">100+</div>
-                  <div className="text-muted-foreground text-sm">Years of Heritage</div>
-                </div>
+              {/* Overlay Badge */}
+              <div className="absolute bottom-6 left-6 bg-gold text-white px-6 py-3 rounded-xl shadow-lg">
+                <span className="text-2xl font-bold">10+</span>
+                <span className="text-sm block">Years of Excellence</span>
               </div>
             </div>
-            {/* Decorative Element */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-gold/30 rounded-lg -z-10" />
+            {/* Decorative */}
+            <div className="absolute -top-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-gold/20 rounded-2xl -z-10" />
           </div>
 
           {/* Content Side */}
           <div>
-            <span className="text-gold font-medium tracking-wider text-sm uppercase">About Our School</span>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-2 mb-6">
-              A Legacy of Excellence
+            <span className="badge-primary mb-4">About Our School</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
+              Nurturing Young Minds in Mbale City
             </h2>
             <div className="divider-gold mb-6" />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              {"Demere's Bright Angels Nursery & Primary School is a beacon of quality early childhood and primary education in Nkoma, Mbale City. We are committed to nurturing young minds in a safe, loving, and stimulating environment."}
+              {"Demere's Bright Angels Nursery & Primary School is a beacon of quality early childhood and primary education located in Nkoma, Mbale City. We are committed to nurturing young minds in a safe, loving, and stimulating environment."}
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              We believe in nurturing the whole child — intellectually, physically, socially, and 
+              We believe in developing the whole child — intellectually, physically, socially, and 
               spiritually. Our dedicated teachers provide a caring environment where every pupil 
-              can discover and develop their unique potential from nursery through primary school.
+              can discover and develop their unique potential.
             </p>
 
-            {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {/* Features List */}
+            <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                    <feature.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm">{feature.title}</h4>
-                    <p className="text-muted-foreground text-xs mt-0.5">{feature.description}</p>
-                  </div>
+                <div key={index} className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-foreground text-sm font-medium">{feature}</span>
                 </div>
               ))}
             </div>
 
-            <Button className="bg-primary text-primary-foreground hover:bg-forest-light group">
-              Learn More About Us
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to="/about">
+              <Button className="bg-primary hover:bg-forest-light text-white font-semibold px-8 rounded-full group">
+                Learn More About Us
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
