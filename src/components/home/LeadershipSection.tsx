@@ -6,8 +6,8 @@ import leader4 from "@/assets/leader-dos.jpg";
 const leaders = [
   {
     image: leader1,
-    name: "Dr. Sarah Nakamya",
-    role: "Head Teacher",
+    name: "Madam Demere Sarah",
+    role: "Founder & Head Teacher",
   },
   {
     image: leader2,

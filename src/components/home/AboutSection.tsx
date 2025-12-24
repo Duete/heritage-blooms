@@ -27,8 +27,8 @@ export function AboutSection() {
               />
               {/* Overlay Badge */}
               <div className="absolute bottom-6 left-6 bg-gold text-white px-6 py-3 rounded-xl shadow-lg">
-                <span className="text-2xl font-bold">10+</span>
-                <span className="text-sm block">Years of Excellence</span>
+                <span className="text-2xl font-bold">Since 2013</span>
+                <span className="text-sm block">Founded by Madam Demere Sarah</span>
               </div>
             </div>
             {/* Decorative */}
