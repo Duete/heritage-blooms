@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, GraduationCap, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import schoolLogo from "@/assets/school-logo.png";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -50,9 +51,11 @@ export function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shadow-md">
-                <GraduationCap className="w-8 h-8 text-white" />
-              </div>
+              <img 
+                src={schoolLogo} 
+                alt="Demere's Bright Angels School Logo" 
+                className="w-16 h-16 object-contain"
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-primary leading-tight">Bright Angels</span>
                 <span className="text-xs text-muted-foreground">Nursery & Primary School</span>
