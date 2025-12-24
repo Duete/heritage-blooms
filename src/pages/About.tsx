@@ -23,10 +23,10 @@ const About = () => {
 
   const leaders = [
     {
-      name: "Mrs. Sarah Demere",
-      role: "Head Teacher",
+      name: "Madam Demere Sarah",
+      role: "Founder & Head Teacher",
       image: leaderHeadteacher,
-      description: "With over 15 years in early childhood education, Mrs. Demere leads our school with passion and dedication.",
+      description: "Founded the school in 2013 with a vision to provide quality education. She leads with passion and dedication.",
     },
     {
       name: "Mr. John Wanyama",
@@ -96,19 +96,20 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Demere's Bright Angels Nursery & Primary School was founded with a vision to provide 
-                    quality education to children in Nkoma Northern City Division, Mbale City. Our journey 
-                    began with a small group of dedicated educators who believed in the transformative power 
-                    of education.
+                    Demere's Bright Angels Nursery & Primary School was founded in 2013 by Madam Demere Sarah 
+                    with a vision to provide quality education to children in Nkoma Northern City Division, Mbale City. 
+                    What began as a small nursery school has grown through her dedication and commitment to 
+                    educational excellence.
                   </p>
                   <p>
-                    Over the years, we have grown from a modest institution to a respected center of learning, 
-                    nurturing thousands of young minds who have gone on to achieve great success in their 
-                    academic and professional lives.
+                    Over the years, we have expanded from nursery to include primary education, 
+                    nurturing young minds and preparing them for success in their academic journey 
+                    and beyond.
                   </p>
                   <p>
-                    Today, we continue to uphold our founding principles while embracing modern teaching 
-                    methodologies to prepare our pupils for the challenges of the 21st century.
+                    Today, under Madam Demere Sarah's continued leadership, we uphold our founding principles 
+                    while embracing modern teaching methodologies to prepare our pupils for the challenges 
+                    of the 21st century.
                   </p>
                 </div>
               </div>
@@ -119,8 +120,8 @@ const About = () => {
                   className="rounded-lg shadow-xl w-full h-[400px] object-cover"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-gold text-primary-foreground p-6 rounded-lg shadow-lg">
-                  <p className="font-serif text-3xl font-bold">10+</p>
-                  <p className="text-sm">Years of Excellence</p>
+                  <p className="font-serif text-2xl font-bold">Since 2013</p>
+                  <p className="text-sm">Founded by Madam Demere Sarah</p>
                 </div>
               </div>
             </div>

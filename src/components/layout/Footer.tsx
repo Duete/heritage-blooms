@@ -134,7 +134,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-            <p>{"© 2024 Demere's Bright Angels Nursery & Primary School. All rights reserved."}</p>
+            <p>{"© 2013-2024 Demere's Bright Angels Nursery & Primary School. Founded by Madam Demere Sarah."}</p>
             <div className="flex gap-6">
               <Link to="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
               <Link to="#" className="hover:text-gold transition-colors">Terms of Use</Link>
