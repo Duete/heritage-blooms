@@ -57,7 +57,7 @@ export function Header() {
                 className="w-16 h-16 object-contain"
               />
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-primary leading-tight">Bright Angels</span>
+                <span className="font-bold text-lg text-primary leading-tight">Demere's Bright Angels</span>
                 <span className="text-xs text-muted-foreground">Nursery & Primary School</span>
               </div>
             </Link>
