@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CheckCircle, FileText, Calendar, CreditCard, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ApplicationForm } from "@/components/admissions/ApplicationForm";
 
 const Admissions = () => {
   const admissionSteps = [
@@ -62,8 +63,26 @@ const Admissions = () => {
           </div>
         </section>
 
+        {/* Application Form Section */}
+        <section className="py-16 md:py-24" id="apply">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <span className="text-gold font-medium uppercase tracking-wider text-sm">Online Application</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2">
+                Apply Now
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                Fill out the application form below to begin the admission process. Fields marked with * are required.
+              </p>
+            </div>
+            <div className="max-w-3xl mx-auto bg-card p-6 md:p-10 rounded-xl shadow-lg border border-border">
+              <ApplicationForm />
+            </div>
+          </div>
+        </section>
+
         {/* Admission Process */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <span className="text-gold font-medium uppercase tracking-wider text-sm">How To Apply</span>
@@ -91,7 +110,7 @@ const Admissions = () => {
         </section>
 
         {/* Requirements */}
-        <section className="py-16 md:py-24 bg-muted/50">
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <span className="text-gold font-medium uppercase tracking-wider text-sm">What You Need</span>
@@ -100,7 +119,7 @@ const Admissions = () => {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-background p-8 rounded-lg shadow-lg border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-lg border border-border">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Nursery Section</h3>
                 <ul className="space-y-3">
                   {requirements.nursery.map((item, index) => (
@@ -111,7 +130,7 @@ const Admissions = () => {
                   ))}
                 </ul>
               </div>
-              <div className="bg-background p-8 rounded-lg shadow-lg border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-lg border border-border">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Primary Section</h3>
                 <ul className="space-y-3">
                   {requirements.primary.map((item, index) => (
@@ -127,15 +146,15 @@ const Admissions = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="bg-primary text-primary-foreground rounded-2xl p-8 md:p-12 text-center">
               <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                Ready to Apply?
+                Need Help With Your Application?
               </h2>
               <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                Take the first step towards giving your child a bright future. Contact us today to 
-                begin the admission process.
+                Our admissions team is ready to assist you. Contact us for any questions about 
+                the enrollment process.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
