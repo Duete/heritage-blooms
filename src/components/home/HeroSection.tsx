@@ -52,8 +52,8 @@ export function HeroSection() {
           {/* Stats Cards */}
           <div className="hidden lg:grid grid-cols-2 gap-4 animate-fade-up delay-400">
             {[
-              { icon: Users, number: "500+", label: "Happy Pupils", color: "bg-gold" },
-              { icon: GraduationCap, number: "30+", label: "Qualified Teachers", color: "bg-white" },
+              { icon: Users, number: "400+", label: "Happy Pupils", color: "bg-gold" },
+              { icon: GraduationCap, number: "15+", label: "Qualified Educators", color: "bg-white" },
               { icon: Award, number: "100%", label: "Love & Care", color: "bg-gold" },
               { icon: Heart, number: "PLE", label: "Excellence Ready", color: "bg-white" },
             ].map((stat, index) => (
