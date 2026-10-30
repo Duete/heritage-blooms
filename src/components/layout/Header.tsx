@@ -10,6 +10,7 @@ const navItems = [
   { label: "Academics", href: "/academics" },
   { label: "School Life", href: "/school-life" },
   { label: "Admissions", href: "/admissions" },
+  { label: "Fees", href: "/fees" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
@@ -63,7 +64,7 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.label}

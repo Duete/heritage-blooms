@@ -5,6 +5,7 @@ const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Academics", href: "/academics" },
   { label: "Admissions", href: "/admissions" },
+  { label: "Fees & Payments", href: "/fees" },
   { label: "School Life", href: "/school-life" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
