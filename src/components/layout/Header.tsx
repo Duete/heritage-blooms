@@ -77,8 +77,8 @@ export function Header() {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button className="bg-gold hover:bg-gold-dark text-white font-semibold px-6 rounded-full shadow-md">
-                Enroll Now
+              <Button asChild className="bg-gold hover:bg-gold-dark text-white font-semibold px-6 rounded-full shadow-md">
+                <Link to="/admissions">Enroll Now</Link>
               </Button>
             </div>
 
@@ -86,7 +86,8 @@ export function Header() {
             <button
               className="lg:hidden p-2 text-primary"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -108,8 +109,8 @@ export function Header() {
                     {item.label}
                   </Link>
                 ))}
-                <Button className="bg-gold hover:bg-gold-dark text-white font-semibold mt-4 rounded-full">
-                  Enroll Now
+                <Button asChild className="w-full bg-gold hover:bg-gold-dark text-white font-semibold mt-4 rounded-full">
+                  <Link to="/admissions" onClick={() => setMobileMenuOpen(false)}>Enroll Now</Link>
                 </Button>
               </nav>
             </div>

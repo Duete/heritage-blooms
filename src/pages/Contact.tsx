@@ -6,9 +6,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission
+    const form = e.currentTarget;
+    const values = new FormData(form);
+    const name = `${values.get("firstName")} ${values.get("lastName")}`.trim();
+    const subject = encodeURIComponent(String(values.get("subject") || "Website enquiry"));
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${values.get("email")}\nPhone: ${values.get("phone") || "Not provided"}\n\n${values.get("message")}`,
+    );
+    window.location.href = `mailto:info@demeresbrightangels.ac.ug?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -110,44 +117,48 @@ const Contact = () => {
               <div className="bg-muted/50 p-8 rounded-lg">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Send Us a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  <p className="text-sm text-muted-foreground -mt-3">
+                    Submitting opens your email app with your message addressed to the school.
+                  </p>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
                         First Name
                       </label>
-                      <Input id="firstName" placeholder="Your first name" required />
+                      <Input id="firstName" name="firstName" autoComplete="given-name" placeholder="Your first name" required />
                     </div>
                     <div>
                       <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
                         Last Name
                       </label>
-                      <Input id="lastName" placeholder="Your last name" required />
+                      <Input id="lastName" name="lastName" autoComplete="family-name" placeholder="Your last name" required />
                     </div>
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                       Email Address
                     </label>
-                    <Input id="email" type="email" placeholder="your.email@example.com" required />
+                    <Input id="email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                       Phone Number
                     </label>
-                    <Input id="phone" type="tel" placeholder="+256 700 000 000" />
+                    <Input id="phone" name="phone" type="tel" autoComplete="tel" placeholder="+256 700 000 000" />
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                       Subject
                     </label>
-                    <Input id="subject" placeholder="How can we help you?" required />
+                    <Input id="subject" name="subject" placeholder="How can we help you?" required />
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                       Message
                     </label>
                     <Textarea 
-                      id="message" 
+                      id="message"
+                      name="message"
                       placeholder="Write your message here..." 
                       rows={5} 
                       required 

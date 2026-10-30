@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import sportsImage from "@/assets/school-sports.jpg";
 import artsImage from "@/assets/school-arts.jpg";
 import clubsImage from "@/assets/school-clubs.jpg";
@@ -62,10 +63,10 @@ export function SchoolLifeSection() {
                 <p className="text-cream/80 text-sm mb-4 line-clamp-3">
                   {activity.description}
                 </p>
-                <span className="text-gold text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Explore
+                <Link to="/school-life" className="text-gold text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+                  Explore school life
                   <ArrowRight size={14} />
-                </span>
+                </Link>
               </div>
             </div>
           ))}
@@ -73,10 +74,12 @@ export function SchoolLifeSection() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button size="lg" variant="heroGold" className="group">
-            Discover School Life
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link to="/school-life">
+            <Button size="lg" variant="heroGold" className="group">
+              Discover School Life
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

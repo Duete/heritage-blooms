@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
+import { GraduationCap, MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 const quickLinks = [
   { label: "About Us", href: "/about" },
@@ -40,25 +40,15 @@ export function Footer() {
             <p className="text-white/70 text-xs italic mb-6">
               "Education is the Ultimate Panacea"
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors">
-                <Youtube size={18} />
-              </a>
-              <a 
-                href="https://wa.me/256782785342" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#25D366] transition-colors"
-              >
-                <MessageCircle size={18} />
-              </a>
-            </div>
+            <a
+              href="https://wa.me/256782785342"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with the school on WhatsApp"
+              className="inline-flex w-10 h-10 bg-white/10 rounded-full items-center justify-center hover:bg-[#25D366] transition-colors"
+            >
+              <MessageCircle size={18} />
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -134,11 +124,8 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-            <p>{"© 2013-2024 Demere's Bright Angels Nursery & Primary School. Founded by Madam Demere Sarah."}</p>
-            <div className="flex gap-6">
-              <Link to="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
-              <Link to="#" className="hover:text-gold transition-colors">Terms of Use</Link>
-            </div>
+            <p>{`© 2013-${new Date().getFullYear()} Demere's Bright Angels Nursery & Primary School. Founded by Madam Demere Sarah.`}</p>
+
           </div>
         </div>
       </div>

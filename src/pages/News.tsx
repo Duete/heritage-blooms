@@ -1,7 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Calendar, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Calendar } from "lucide-react";
 import newsGraduation from "@/assets/news-graduation.jpg";
 import newsScience from "@/assets/news-science.jpg";
 import newsSports from "@/assets/news-sports.jpg";
@@ -105,9 +104,7 @@ const News = () => {
                       {article.title}
                     </h3>
                     <p className="text-muted-foreground text-sm mb-4">{article.excerpt}</p>
-                    <Button variant="link" className="p-0 h-auto text-primary">
-                      Read More <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
+
                   </div>
                 </article>
               ))}

@@ -16,10 +16,10 @@ export function CTASection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Give Your Child the <span className="text-gold">Best Start?</span>
+            Looking for a <span className="text-gold">School for Your Child?</span>
           </h2>
           <p className="text-white/90 text-lg mb-10 max-w-xl mx-auto">
-            Join our community of happy families. Contact us today to learn more about admissions.
+            Contact us to learn more about the admissions process and school community.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

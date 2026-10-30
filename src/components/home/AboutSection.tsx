@@ -40,11 +40,11 @@ export function AboutSection() {
           <div>
             <span className="badge-primary mb-4">About Our School</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
-              Nurturing Young Minds in Mbale City
+              Learning and Growing in Mbale City
             </h2>
             <div className="divider-gold mb-6" />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              {"Demere's Bright Angels Nursery & Primary School is a beacon of quality early childhood and primary education located in Nkoma, Mbale City. We are committed to nurturing young minds in a safe, loving, and stimulating environment."}
+              {"Demere's Bright Angels Nursery & Primary School is located in Nkoma, Mbale City, and provides early childhood and primary education in a safe, supportive learning environment."}
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               We believe in developing the whole child — intellectually, physically, socially, and 
